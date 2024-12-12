@@ -1,0 +1,40 @@
+<mvc:View controllerName="com.login.lkm.loginpagedemo.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+	<VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormChange354"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Text id="vals" text="Welcome,User"></Text>
+				<Label id="_IDGenLabel1" text="UserName" />
+				<Input id="name" placeholder="Enter Username ..." value="" />
+				<Label id="_IDGenLabel2" text="Password" />
+				<Input id="pwd" type="Password"
+				placeholder="Enter password ..." value="">
+				</Input>
+			</f:content>
+			<Button id="_IDGenButton1" text="Logon" type="Emphasized" press="onPress"></Button>
+			<Button id="_IDGenButton2" text="Reset" type="Emphasized" press="onClear"></Button>
+		</f:SimpleForm>
+	</VBox>
+    </content>
+    </Page>
+</mvc:View>
